@@ -1,0 +1,8 @@
+<launch>
+　　<node pkg="pcl_demo" type="bag_to_pcd" name="bag_to_pcd" clear_params="true" output="screen">
+　　　　<!-- First way: direct set-->
+　　　　<param name="pcd_view_order" type="string" value="piao"/> 
+　　　　<!-- Second way: use .yaml file-->
+<!-- 　　　　<rosparam file="$(find pcl_demo)/config/ros.yaml"/> -->
+　　</node>
+</launch>
